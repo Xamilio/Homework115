@@ -31,9 +31,8 @@ int main()
 
     double a, b;
     char op;
-
-    cout << "КАЛЬКУЛЯТОР" << endl;
-    cout << "Введіть вираз (наприклад, 5 + 3): ";
+    
+    cout << "Введіть вираз: ";
     cin >> a >> op >> b;
 
     bool found = false;
@@ -46,7 +45,7 @@ int main()
             break;
         }
     }
-    if (!found) cout << "Помилка: невідома операція!" << endl;
+    if (!found) cout << "Помилка: невідома операція" << endl;
     int size = 5;
     int* A = new int[size];
     int* B = new int[size];
